@@ -1,0 +1,79 @@
+@media (min-width:1200px) {
+  .allPruducts .container {
+  width: 1400px !important;
+  }
+  
+}
+
+#allpruducts .makebtn a {
+  padding: .5rem;
+}
+div.lastInfo.d-flex span {
+  padding-bottom: 1rem;
+  padding-left: 0;
+} 
+
+#allpruducts .img{
+  height: fit-content;
+}
+.pruductImg {
+  height: 310px;
+  background-image: url(imgs/header-right.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h5.card-title {
+  margin-bottom: 0;
+  padding: .5rem 0;
+}
+h6 {
+  font-size: .8rem;
+  font-weight: 300;
+  letter-spacing: .1rem;
+  padding-left: 0;
+}
+
+.lastInfo {
+  margin-bottom: 0 !important;
+}
+.makebtn {
+  bottom: -1% !important;
+}
+@media (min-width:768px) and (max-width:992px) {
+  .befor,
+    .after {
+      padding: .5rem 1.2rem !important;
+    }
+
+        .after {
+          right: 4px !important;
+        }
+}
+
+#hight {
+  height: 732.859px;
+}
+
+@media (max-width:1235px) {
+  .socialLogo {
+    padding-bottom: .1rem !important;
+  }
+}
+
+footer li {
+  cursor: pointer;
+}
+
+#search, #search:focus{
+  padding: .5rem;
+  padding-right:.8rem ;
+  border-radius: 15px;
+  background-color: #292e5f75;
+  border: none ;
+  font-weight: 400;
+  outline: 2px solid #2a3064;
+  box-shadow: 0px 0px 0px 2px #292e5f75;
+  color:#f7f7f7 ;
+  font-size: 1rem;
+}
