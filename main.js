@@ -109,7 +109,7 @@ Datas.onload = function () {
     showauther(user)
     sliders(Data, user)
     console.log(x)
-    autosliders(user,x,z,y,r,t,s)
+    autosliders(user,y,r,t,s,y,r)
   };
   let x = []
   let y = []
@@ -120,7 +120,7 @@ Datas.onload = function () {
   for (let i = 0; i < Data.products.length; i++) {
     if (Data.products[i].category == "smartphones") {
       x.push(Data.products[i])
-    } else if (Data.products[i].category == "skincare") {
+    } else if (Data.products[i].category == "beauty") {
       y.push(Data.products[i])
     } else if (Data.products[i].category == "laptops") {
       z.push(Data.products[i])
@@ -128,9 +128,10 @@ Datas.onload = function () {
       r.push(Data.products[i])
     } else if (Data.products[i].category == "groceries") {
       s.push(Data.products[i])
-    } else if (Data.products[i].category == "home-decoration") {
+    } else if (Data.products[i].category == "furniture") {
       t.push(Data.products[i])
     }
+  
   }
   console.log(x);
   console.log(y);
@@ -138,6 +139,7 @@ Datas.onload = function () {
   console.log(r);
   console.log(s);
   console.log(t);
+
 };
 function showdata(pruduct,user) {
   console.log(pruduct);
@@ -514,7 +516,7 @@ function autosliders(user,...prudact) {
                             <div class="contentIMg">
                               <div class="row">
                                 <div class="col-4">
-                                  <div class="img" style="background-image: url(${prudact[i][i+1].images[0]});"></div>
+                                  <div class="img" style="background-image: url(${prudact[i][i].images[0]});"></div>
                                 </div>
                                 <div class="col-4"> 
                                   <div class="img" style="background-image: url(${prudact[i][i+2].images[0]});"></div>
@@ -639,10 +641,10 @@ function autosliders(user,...prudact) {
                                   <div class="img" style="background-image: url(${prudact[i][1].images[0]});"></div>
                                 </div>
                                 <div class="col-4"> 
-                                  <div class="img" style="background-image: url(${prudact[i][2].images[0]});"></div>
+                                  <div class="img" style="background-image: url(${prudact[i][3].images[0]});"></div>
                               </div>
                                 <div class="col-4">
-                                  <div class="img" style="background-image: url(${prudact[i][3].images[0]});"></div>
+                                  <div class="img" style="background-image: url(${prudact[i][4].images[0]});"></div>
                               </div>
                               </div>
                             </div>
@@ -697,6 +699,12 @@ function autosliders(user,...prudact) {
     };
   });
 }
+
+
+
+
+
+
 
 
 // function showprudc(pruduct) {
