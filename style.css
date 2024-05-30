@@ -1392,6 +1392,8 @@ background-image: -webkit-linear-gradient(138deg, rgb(248, 110, 126) 0%, rgb(254
   background-position: center;
   background-size: contain;
   height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #ninthslider {
